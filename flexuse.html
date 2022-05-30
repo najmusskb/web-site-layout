@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex use</title>
+    <script src="https://kit.fontawesome.com/979ed8e9a2.js" crossorigin="anonymous"></script>
+    <style>
+        nav a {
+            text-decoration: none;
+            color: black;
+            font-size: 1.5em;
+            margin-right: 15px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .login-container {
+
+            display: flex;
+            justify-content: center;
+        }
+
+        .login-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .login-form input,
+        button {
+            font-size: 1.3em;
+            margin-top: 15px;
+            border: 1px solid lightblue;
+            padding: 7px;
+            border-radius: 5px;
+        }
+
+        .login-form button {
+            background-color: orange;
+            color: whitesmoke;
+            font-weight: 700;
+        }
+
+        .hovr :hover {
+            background-color: blue;
+            padding: 5px;
+        }
+
+        .hovr {
+
+            background-color: orange;
+            height: 35px;
+            width: 35%;
+            display: flex;
+            justify-content: space-around;
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 10px;
+
+
+        }
+
+        .hovr a {
+
+            font-weight: 20px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <span class="hovr">
+                <a href="">Home</a>
+                <a href="">Products</a>
+                <a href="">Orders</a>
+                <a href="">About US</a>
+            </span>
+            <span>
+                <a href=""><i class="fa-solid fa-user"></i></a>
+                <a href=""><i class="fa-solid fa-right-from-bracket"></i></a>
+            </span>
+        </nav>
+    </header>
+    <section class="login-container">
+        <form action="" class="login-form">
+            <h2>Login</h2>
+            <input type="email" name="email" placeholder="Enter You Email" id="" required>
+            <input type="password" name="password" placeholder="Enter Password" id="" required>
+            <button type="submit">Login</button>
+        </form>
+    </section>
+</body>
+
+</html>
