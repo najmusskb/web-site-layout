@@ -1,0 +1,12 @@
+.container {
+
+    border: 2px solid blue;
+    height: 100px;
+    width: 800px;
+
+}
+
+.display {
+
+    display: flex;
+}
